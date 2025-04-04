@@ -1,0 +1,2 @@
+final_assignment:local_inn:volta/volta_base:volta/volta_control:volta/volta_description:volta/volta_localization:volta/volta_msgs:volta/volta_navigation:volta/volta_rules:volta/volta_teleoperator:volta_simulation
+-DCATKIN_DEVEL_PREFIX=/home/siva/cps_280_ws/devel -DCMAKE_INSTALL_PREFIX=/home/siva/cps_280_ws/install -G Unix Makefiles

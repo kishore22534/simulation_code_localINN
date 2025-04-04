@@ -1,0 +1,8 @@
+prefix=/home/siva/cps_280_ws/devel
+
+Name: volta_teleoperator
+Description: Description of volta_teleoperator
+Version: 1.2.0
+Cflags: -I/home/siva/cps_280_ws/src/volta/volta_teleoperator/include
+Libs: -L${prefix}/lib -ljoy_teleop
+Requires: 

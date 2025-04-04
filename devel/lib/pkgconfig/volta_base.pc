@@ -1,0 +1,8 @@
+prefix=/home/siva/cps_280_ws/devel
+
+Name: volta_base
+Description: Description of volta_base
+Version: 1.2.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

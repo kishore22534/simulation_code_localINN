@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="world" default="$(find final_assignment)/worlds/small_house.world"/>
+    <param name="use_sim_time" value="true"/>
+
+    <!-- Include empty world launch file -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(arg world)"/>
+        <arg name="paused" value="false"/>
+        <arg name="use_sim_time" value="true"/>
+        <arg name="gui" value="true"/>
+        <arg name="headless" value="false"/>
+        <arg name="debug" value="false"/>
+    </include>
+
+    <!-- Load the Gazebo ROS Marker Plugin -->
+    <node name="gazebo_ros_marker_plugin" pkg="gazebo_ros" type="gazebo_ros_marker" args="__name:=marker_plugin">
+        <param name="visualize_topic" value="/visualization_marker"/>
+    </node>
+</launch>
+
